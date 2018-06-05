@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="first name  second name"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/names"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="Age : 00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/age"
+        android:layout_alignStart="@+id/age"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="10dp"
+        android:text="Salary : 1030300" />
+
+    <ImageView
+        android:id="@+id/gender"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/names"
+        android:layout_toLeftOf="@+id/diet"
+        app:srcCompat="@drawable/famale" />
+
+    <ImageView
+        android:id="@+id/diet"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/names"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/vegetarian" />
+
+    <ImageView
+        android:id="@+id/colors"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/names"
+        android:layout_toRightOf="@+id/diet"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/food2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vegetarian"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/colors"
+        android:layout_alignLeft="@+id/food1"
+        android:layout_alignStart="@+id/food1" />
+
+    <TextView
+        android:id="@+id/food1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vegetarian"
+        android:textSize="18sp"
+        android:layout_above="@+id/food2"
+        android:layout_alignRight="@+id/names"
+        android:layout_alignEnd="@+id/names" />
+
+</RelativeLayout>
